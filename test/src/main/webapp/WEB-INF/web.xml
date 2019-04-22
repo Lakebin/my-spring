@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+    <display-name>My Web Application</display-name>
+    <servlet>
+        <!--第一步 配置DispatcherServlet-->
+        <servlet-name>lakeMVC</servlet-name>
+        <servlet-class>com.lake.mvcframework.v3.servlet.MyDispatcherServlet</servlet-class>
+        <!--第二步 设置初始化参数 init-param-->
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>application.properties</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <!--第三步 配置url-pattern-->
+        <servlet-name>lakeMVC</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+</web-app>
+
