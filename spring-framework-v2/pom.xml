@@ -10,6 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-framework-v2</artifactId>
-
+    <description>手写Spring第二版，30个类手写Spring</description>
 
 </project>

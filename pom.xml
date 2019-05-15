@@ -12,7 +12,7 @@
 
     <!--框架版本-->
     <modules>
-        <module>test</module>
+        <module>spring-framework-test</module>
         <module>spring-framework-v1</module>
         <module>spring-framework-v2</module>
     </modules>

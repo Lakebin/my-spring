@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>war</packaging>
 
-    <artifactId>test</artifactId>
+    <artifactId>spring-framework-test</artifactId>
 
     <dependencies>
         <dependency>
@@ -71,7 +71,7 @@
                 <artifactId>maven-jetty-plugin</artifactId>
                 <version>6.1.26</version>
                 <configuration>
-                    <webDefaultXml>../test/src/main/resources/webdefault.xml</webDefaultXml>
+                    <webDefaultXml>/src/main/resources/webdefault.xml</webDefaultXml>
                     <contextPath>/</contextPath>
                     <connectors>
                         <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">

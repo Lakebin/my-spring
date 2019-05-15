@@ -11,8 +11,8 @@
 
 1. 遍历IOC容器中的bean
 2. 获取bean的所有属性
-3. 只有带有@Autowred注解的属性需要进行依赖注入
-4. 获取需要被注入实例的bean name，默认为类名首字母小写，优先使用@Autowred中所配置的值
+3. 只有带有@Autowired注解的属性需要进行依赖注入
+4. 获取需要被注入实例的bean name，默认为类名首字母小写，优先使用@Autowired中所配置的值
 5. 以bean name为key到IOC容器中查找，将查找的结果强制赋值给属性
 
 # 3.  MVC执行原理
